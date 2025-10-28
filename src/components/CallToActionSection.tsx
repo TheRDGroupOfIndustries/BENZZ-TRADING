@@ -5,7 +5,7 @@ import { RiPhoneLine, RiMailLine, RiYoutubeLine } from "react-icons/ri";
 
 const CallToActionSection: React.FC = () => {
   return (
-    <section className="py-20 bg-[#244dbd] relative overflow-hidden">
+    <section id="contact" className="py-20 bg-[#244dbd] relative overflow-hidden">
       {/* Decorative pattern background */}
       <div className="absolute inset-0 chart-pattern opacity-10" />
 

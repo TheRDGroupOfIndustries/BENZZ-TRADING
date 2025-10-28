@@ -36,13 +36,13 @@ const About: React.FC = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8">
               <div className="text-center p-6 bg-gray-50 rounded-xl">
-                <div className="text-3xl font-bold text-[#2563EB] font-montserrat">
+                <div className="text-3xl font-bold text-[#1e40af] font-montserrat">
                   13+
                 </div>
                 <div className="text-gray-600 font-medium">Years Trading</div>
               </div>
               <div className="text-center p-6 bg-gray-50 rounded-xl">
-                <div className="text-3xl font-bold text-[#2563EB] font-montserrat">
+                <div className="text-3xl font-bold text-[#1e40af] font-montserrat">
                   400+
                 </div>
                 <div className="text-gray-600 font-medium">Trained Learners</div>
@@ -59,7 +59,7 @@ const About: React.FC = () => {
               height={700}
               className="w-full h-auto rounded-2xl shadow-2xl object-cover"
             />
-            <div className="absolute -bottom-6 -right-6 bg-[#2563EB] text-white p-6 rounded-xl shadow-lg">
+            <div className="absolute -bottom-6 -right-6 bg-[#1e40af] text-white p-6 rounded-xl shadow-lg">
               <div className="text-2xl font-bold ">Market Expert</div>
               <div className="text-sm opacity-90">Since 2010</div>
             </div>

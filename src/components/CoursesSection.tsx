@@ -6,8 +6,9 @@ import {
   RiStockLine, 
   RiFundsLine, 
   RiPieChartLine, 
-  RiGlobalLine 
+  RiGlobalLine,
 } from "react-icons/ri";
+import { FaBitcoin } from "react-icons/fa";
 
 interface Course {
   title: string;
@@ -45,6 +46,12 @@ const courses: Course[] = [
     description:
       "Explore international markets, forex trading, and global investment opportunities for portfolio diversification.",
     icon: <RiGlobalLine className="text-primary text-2xl" />,
+  },
+  {
+    title: "Cryptocurrency",
+    description:
+      "Navigate the digital asset landscape with comprehensive crypto trading and investment strategies.",
+    icon: <FaBitcoin className="text-primary text-2xl" />,
   },
 ];
 

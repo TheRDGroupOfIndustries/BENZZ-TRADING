@@ -10,8 +10,12 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Brand */}
           <div className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-[#1e40af] font-montserrat">BENZZ</span>
-            <span className="text-2xl font-bold text-[#64748b] font-montserrat">TRADING</span>
+            <span className="text-2xl font-bold text-[#1e40af] font-montserrat">
+              BENZZ
+            </span>
+            <span className="text-2xl font-bold text-[#64748b] font-montserrat">
+              TRADING
+            </span>
           </div>
 
           {/* Desktop Links */}
@@ -40,7 +44,13 @@ const Navbar: React.FC = () => {
             >
               Reviews
             </Link>
-            <button className="bg-primary text-white px-6 py-2 rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap">
+            <button
+              onClick={() => {
+                const section = document.getElementById("contact");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="bg-[#1e40af] text-white px-6 py-2 rounded-lg cursor-pointer hover:bg-[#1d4ed8] transition-colors whitespace-nowrap"
+            >
               Get Started
             </button>
           </div>
