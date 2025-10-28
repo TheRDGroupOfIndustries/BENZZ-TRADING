@@ -12,7 +12,7 @@ import {
 interface Course {
   title: string;
   description: string;
-  icon: JSX.Element;
+  icon: React.ReactNode;
 }
 
 const courses: Course[] = [

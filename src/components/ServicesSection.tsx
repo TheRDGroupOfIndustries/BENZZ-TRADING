@@ -11,7 +11,7 @@ import {
 interface Service {
   title: string;
   description: string;
-  icon: JSX.Element;
+  icon: React.ReactNode;
 }
 
 const services: Service[] = [
