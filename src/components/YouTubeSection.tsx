@@ -51,7 +51,9 @@ const YouTubeSection: React.FC = () => {
             </div>
 
             {/* Button */}
-            <button className="bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-colors whitespace-nowrap flex items-center space-x-2">
+            <button 
+            onClick={() => window.open("https://www.youtube.com/@benzztrading", "_blank")}
+            className="cursor-pointer bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-colors whitespace-nowrap flex items-center space-x-2">
               <RiYoutubeFill className="w-6 h-6" />
               <span>Watch Now</span>
             </button>
@@ -67,9 +69,11 @@ const YouTubeSection: React.FC = () => {
                 className="object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center shadow-lg hover:bg-red-700 transition-colors cursor-pointer">
+                <button  onClick={() => window.open("https://www.youtube.com/@benzztrading", "_blank")}>
+                  <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center shadow-lg hover:bg-red-700 transition-colors cursor-pointer">
                   <RiPlayFill className="text-white text-3xl ml-1" />
                 </div>
+                </button>
               </div>
             </div>
 
