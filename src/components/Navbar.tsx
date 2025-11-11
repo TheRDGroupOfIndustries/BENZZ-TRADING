@@ -9,13 +9,8 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Brand */}
-          <div className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-[#1e40af] font-montserrat">
-              BENZZ
-            </span>
-            <span className="text-2xl font-bold text-[#64748b] font-montserrat">
-              TRADING
-            </span>
+          <div className="flex px-8 items-center">
+            <img src="/logo.png" alt="BENZZ TRADING" className="h-10 sm:h-12" />
           </div>
 
           {/* Desktop Links */}

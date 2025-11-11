@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { RiYoutubeFill, RiPlayFill } from "react-icons/ri";
+import { RiYoutubeFill, RiPlayFill, RiInstagramFill, RiTelegramLine } from "react-icons/ri";
 
 const YouTubeSection: React.FC = () => {
   return (
@@ -33,12 +33,8 @@ const YouTubeSection: React.FC = () => {
                 experienced traders.
               </p>
 
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 text-center">
-                <div>
-                  <div className="text-2xl font-bold text-primary">100K+</div>
-                  <div className="text-sm text-gray-600">Subscribers</div>
-                </div>
+              {/* Stats - removed 100K+ Subscribers per request and centered remaining two */}
+              <div className="grid grid-cols-2 gap-6 text-center max-w-md">
                 <div>
                   <div className="text-2xl font-bold text-primary">500+</div>
                   <div className="text-sm text-gray-600">Videos</div>
@@ -51,12 +47,33 @@ const YouTubeSection: React.FC = () => {
             </div>
 
             {/* Button */}
-            <button 
-            onClick={() => window.open("https://www.youtube.com/@benzztrading", "_blank")}
-            className="cursor-pointer bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-colors whitespace-nowrap flex items-center space-x-2">
-              <RiYoutubeFill className="w-6 h-6" />
-              <span>Watch Now</span>
-            </button>
+            <div className="flex flex-wrap items-center gap-4">
+              <button
+                onClick={() => window.open("https://www.youtube.com/@benzztrading", "_blank")}
+                className="cursor-pointer bg-red-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-700 transition-colors whitespace-nowrap flex items-center gap-2"
+              >
+                <RiYoutubeFill className="w-5 h-5" />
+                <span>Watch Now</span>
+              </button>
+
+              {/* Telegram button - white with blue border/text */}
+              <button
+                onClick={() => window.open("https://t.me/benzztrading", "_blank")}
+                className="cursor-pointer bg-white text-[#0088cc] border border-[#0088cc] px-6 py-3 rounded-full text-lg font-semibold hover:bg-[#e6f7ff] transition-colors whitespace-nowrap flex items-center gap-2"
+              >
+                <RiTelegramLine className="w-5 h-5" />
+                <span>Telegram</span>
+              </button>
+
+              {/* Instagram button - colorful gradient similar to Instagram */}
+              <button
+                onClick={() => window.open("https://www.instagram.com/benzztrading", "_blank")}
+                className="cursor-pointer bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:opacity-95 transition-colors whitespace-nowrap flex items-center gap-2 shadow-lg"
+              >
+                <RiInstagramFill className="w-5 h-5" />
+                <span>Instagram</span>
+              </button>
+            </div>
           </div>
 
           {/* Right Video Thumbnail */}

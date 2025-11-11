@@ -6,6 +6,7 @@ import {
   RiBriefcaseLine,
   RiBarChartLine,
   RiCurrencyLine,
+  RiFundsLine,
 } from "react-icons/ri";
 
 interface Service {
@@ -39,12 +40,18 @@ const services: Service[] = [
       "Navigate the cryptocurrency markets with expert guidance on blockchain technology, DeFi, and digital asset trading.",
     icon: <RiCurrencyLine className="text-primary text-3xl" />,
   },
+  {
+    title: "360 Financial Solutions",
+    description:
+      "Holistic financial planning, advisory, risk management and portfolio solutions.",
+    icon: <RiFundsLine className="text-primary text-3xl" />,
+  },
 ];
 
 const ServicesSection: React.FC = () => {
   return (
-    <section id="services" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="services" className="py-10 bg-white">
+      <div className="max-w-screen-2xl mx-auto px-6">
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl font-bold text-gray-900 font-montserrat">
@@ -55,23 +62,23 @@ const ServicesSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Services Row - all cards in a single row without scrolling */}
+        <div className="flex gap-10 flex-nowrap items-stretch">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-8 text-center hover:shadow-lg transition-shadow"
+              className="flex-1 min-w-0 md:flex-[0_0_18%] bg-white border border-gray-200 rounded-xl p-15 text-center hover:shadow-lg transition-shadow"
             >
-              <div className="w-20 h-20 bg-[#e8ecf7] rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-10 text-[#1e40af] h-10 flex items-center justify-center">
+              <div className="w-26 h-26 bg-[#e8ecf7] rounded-full flex items-center justify-center mx-auto mb-8">
+                <div className="w-20 text-[#1e40af] h-12 flex items-center justify-center text-4xl">
                   {service.icon}
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 {service.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-700 text-lg leading-relaxed">
                 {service.description}
               </p>
             </div>

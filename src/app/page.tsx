@@ -15,10 +15,10 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
-      <About />
-      <YouTubeSection />
-      <CoursesSection/>
-      <ServicesSection />
+  <About />
+  <YouTubeSection />
+  <ServicesSection />
+  <CoursesSection />
       <WhyChooseSection />
       <TestimonialsSection />
       <CallToActionSection />
