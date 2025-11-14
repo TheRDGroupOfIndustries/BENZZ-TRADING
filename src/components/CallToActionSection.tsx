@@ -23,11 +23,8 @@ const CallToActionSection: React.FC = () => {
           Start with expert guidance and proven strategies.
         </p>
 
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="cursor-pointer bg-white text-[#1e40af] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#f3f4f6] transition-colors whitespace-nowrap">
-            Start Free Trial
-          </button>
+        {/* Buttons - removed Start Free Trial per request */}
+        <div className="flex justify-center">
           <button className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#1e40af] hover:text-primary transition-colors whitespace-nowrap">
             Schedule Consultation
           </button>

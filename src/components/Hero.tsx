@@ -21,15 +21,12 @@ const Hero: React.FC = () => {
           {/* Left Content: logo + text stacked, left-aligned along same vertical axis */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="flex">
-                <img src="/logo.png" alt="BENZZ TRADING" className="h-20 px--25 sm:h-32 md:h-36" />
-              </div>
-
-              <h1 className="text-4xl px-11 font-bold text-gray-900 font-montserrat leading-tight">
+              {/* Removed duplicate/overlay logo per request */}
+              <h1 className="text-4xl font-bold text-gray-900 font-montserrat leading-tight">
                 Master the Market with Confidence
               </h1>
 
-              <p className="text-xl px-11 text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-600 leading-relaxed">
                 Transform your trading journey with expert guidance from Shubham
                 Gupta. 13+ years of experience, 400+ successful learners, and
                 proven strategies for Indian &amp; global markets.
@@ -37,7 +34,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col px-11 sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button className="cursor-pointer bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold bg-[#1E40AF] hover:bg-[#1d4ed8] transition-colors whitespace-nowrap">
                 Start Learning
               </button>
@@ -48,7 +45,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap px-6 items-center gap-6 text-sm text-gray-600">
+            <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600">
               <div className="flex items-center space-x-2">
                 <div className="w-4 h-4 flex items-center justify-center">
                   <i className="ri-user-line text-primary" />

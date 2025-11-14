@@ -53,7 +53,7 @@ const About: React.FC = () => {
           {/* Right image */}
           <div className="relative">
             <Image
-              src="/self.png"
+              src="/benzzImg.jpg"
               alt="Shubham Gupta"
               width={600}
               height={700}
