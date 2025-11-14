@@ -62,25 +62,30 @@ const ServicesSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Services Row - all cards in a single row without scrolling */}
-        <div className="flex gap-10 flex-nowrap items-stretch">
+        {/* Services Grid - card style similar to reference (left aligned, pale background, square icon) */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex-1 min-w-0 md:flex-[0_0_18%] bg-white border border-gray-200 rounded-xl p-15 text-center hover:shadow-lg transition-shadow"
+              className="bg-gray-50 rounded-xl p-8 hover:shadow-md transition-shadow flex flex-col h-full"
             >
-              <div className="w-26 h-26 bg-[#e8ecf7] rounded-full flex items-center justify-center mx-auto mb-8">
-                <div className="w-20 text-[#1e40af] h-12 flex items-center justify-center text-4xl">
-                  {service.icon}
+              <div className="flex items-start gap-6">
+                <div className="w-14 h-14 bg-white rounded-md flex items-center justify-center shadow-sm">
+                  <div className="text-[#1e40af] text-2xl">
+                    {service.icon}
+                  </div>
+                </div>
+
+                <div className="text-left">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {service.title}
+                  </h3>
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {service.title}
-              </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <div className="mt-6 text-left text-gray-600 leading-relaxed flex-1">
                 {service.description}
-              </p>
+              </div>
             </div>
           ))}
         </div>
